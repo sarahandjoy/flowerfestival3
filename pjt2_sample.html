@@ -1,0 +1,473 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>test</title>
+  <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Jua|Nanum+Pen+Script|Noto+Sans+KR&display=swap" rel="stylesheet"> 
+  
+  <style>
+     
+      .multi {
+
+        background-image:
+       url(bgtrial.jpg), url(cloudpng.png);
+        background-repeat:no-repeat, no-repeat;
+        background-size:100% 100%;
+        background-position:top;
+}
+      
+      #slider {
+          overflow: hidden;
+          max-width: 2000px;
+          
+      }
+      #slider figure {
+          position: relative;
+          width: 500%;
+          margin: 0;
+          animation: 20s slider infinite;
+      }
+          #slider figure img {
+              width: 10%;
+              float: left;
+          }
+          @keyframes slider {
+              0%  {left:0;}
+              20% {left:0;}
+              25% {left:-50%;}
+              45% {left: -50%;}
+              50% {left: -100%;}
+              70% {left: -100%;}
+              75% {left: -150%;}
+              95% {left: -150%;}
+              100% {left: -200%;}
+          }
+      .title {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: stretch;
+          width: 100%;
+      }
+      .titletxt {
+          position: absolute;
+          text-align: center;
+          font-size: 50;
+          margin-top: 140;
+          font-family: 'Jua', sans-serif;
+          color: white;
+          text-shadow: 2px 2px 1px coral;
+      }
+      .titlenumber {
+          position: absolute;
+          text-align: center;
+          font-size: 43;
+          margin-top: 100;
+          color: yellow;
+          font-family: 'Nanum Pen Script';
+      }
+      .titleeng {
+          position: absolute;
+          text-align: center;
+          font-size: 25;
+          margin-top: 210;
+          color: yellow;
+          font-family: 'Nanum Pen Script';
+      }
+      
+      .box {
+          display: flex;
+          height: 300;
+
+      }
+      .box img {
+          width: 100%;
+          object-fit: contain;
+          margin-top: 10px;
+      }
+
+      .theme {
+          text-align: center;
+          margin-top: 20px;
+          font-size: 6vw;
+          height: auto;
+          font-family: 'Jua', sans-serif;
+      }
+      @media screen and (min-width:1000px){
+          .theme {font-size: 50px;}
+      }
+      .description {
+          text-align: center;
+          font-size: 30px;
+          color: thistle;
+          margin: 30px;
+          margin-bottom: 80px;
+          font-family: 'Nanum Pen Script', cursive;
+      }
+      .date {
+        width: 280px;
+          padding: 10px;
+          margin: 0 auto;
+        border: 2.5px solid white;
+          border-radius: 30px;
+        text-align: center;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-size: 25;
+      }
+      .center{
+          display:block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 0px;
+      }
+      .icon{
+          margin-top: 120px;
+          text-align: center;
+      }
+      .map {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: -10px;
+      }
+      .map_box {
+          display: flex;
+          height: auto;
+          max-height: 350;
+      }
+      .map_box img {
+           width: 100%;
+          object-fit: contain;
+      }
+/*
+      .intro {
+          text-align: center;
+          margin: 200px;
+          font-size: 30px;
+          font-family: 'Sunflower', sans-serif;
+          color:floralwhite;
+          text-shadow: 1px 1px 5px gray;
+      }
+*/
+      .activity {
+          flex-wrap: wrap;
+          position: relative;
+          flex-direction: row;
+          object-fit: contain;
+      }
+      .activity_box {
+          text-align: center;
+      }
+      .show_box {
+          text-align: center;
+/*
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          flex-direction: row;
+          object-fit: contain;
+*/
+      }
+      .subtitle {
+          margin-top: 80px;
+          margin-bottom: 15px;
+          text-align: center;
+          font-size: 30px;
+          color: #ffa9c6;
+          font-family: 'Jua', sans-serif;
+      }
+      .cherrypng img{
+         
+          position: absolute;
+          margin-top: 500px;
+          vertical-align: middle;
+          width:100%;
+      }
+      .cherrypng img {
+  position: absolute;
+          margin-top: 100px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: auto;
+/*  margin: auto;*/
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+      
+      
+</style>
+  
+</head>
+
+<body>
+
+<div class="multi">
+
+ <div id="wrap"><!--콘텐츠가 1200px 넓이를 넘지 않게합니다. -->
+    
+    <div class ="title">
+     <div class="box">
+         <img src="titlebg.png">
+         
+     </div>
+   
+        <div class="titlenumber">
+             2019
+         </div>
+        <div class="titletxt">
+             한강 봄꽃 축제
+         </div>
+         <div class="titleeng">
+             2019 Hangang Flower Festival
+         </div>
+
+    </div>
+    
+    <div class="nav">
+                <ol>
+                    <li><a href="#section1">벚꽃</a></li>
+                    <li><a href="#section2">개나리</a></li>
+                    <li><a href="#section3">유채꽃</a></li>
+                    <li><a href="#section4">장미</a></li>
+                </ol>
+    </div> 
+   
+    <div id="slider">
+        <figure>
+            <img src="cherry.jpg">
+            <img src="gaenari.jpg">
+            <img src="1.jpg">
+            <img src="%EC%9E%A5%EB%AF%B8.jpg">
+            <img src="cherry.jpg">
+        </figure>
+    </div>   
+    
+    
+     
+<!--
+    <div id="header">
+          <div class="front_m">
+            <div class="pink_back">one</div>
+            <div class="pink_back">two</div>
+            <div class="pink_back">three</div>
+            <div class="pink_back">four</div>
+        </div>  
+          <div class="back_m">    
+            <div class="pink_back">five</div>
+            <div class="pink_back">six</div>
+            <div class="pink_back">seven</div>
+        <div class="pink_back_8">eight <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil numquam, rerum quas sapiente dolor iste omnis, obcaecati minus quidem itaque, consectetur corporis adipisci quaerat reprehenderit suscipit inventore reiciendis dolores atque. </div>  
+        </div>       
+    </div>
+-->
+                
+<div id="section1">
+
+    <div class="cherrypng">
+           <img src="cherrypng.png">
+    </div>
+
+     <div class ="icon">
+         <img src = "cherry_icon.png" width="70">
+        </div>
+        
+
+       
+       <div class="theme"> 여의도 벚꽃 축제 </div>
+       <div class ="description"> " 봄바람 휘날리며~ <br/>벚꽃이 흩날리는 이 거리를 우리 걸어요~" </div>
+       
+       <div class="subtitle">일정</div>
+       
+       <div class="date">
+              <strong>2019.4.5.</strong><ee style="font-size: 15px;">(금)</ee><strong>~4.15</strong><ee style="font-size: 15px;">(월)</ee><br/><ee style="font-size: 15px;">여의도 한강공원</ee>
+        </div>
+
+       <div class="subtitle">장소</div>
+       
+       <div class="map">
+       <div class="map_box">
+          <img src ="map_cherry.png"> 
+       </div>
+        </div>
+        <div class ="subtitle">액티비티</div>
+        <div class="activity_box">
+        <div class="activity">
+            <img src="cherryA1.png" width= "220">
+            <img src="cherryA2.png" width= "220">
+            <img src="cherryA3.png" width= "220">
+        </div>
+        </div>
+        <div class ="subtitle">행사</div>
+        <div class="show_box">
+           <div class="show">
+            <img src="cherryF1.png" width="470">
+            <img src="cherryF2.png" width="470">
+             </div>
+        </div>
+</div>
+        
+    <div id="section2">
+        <div class="cherrypng">
+           <img src="gae_branch.png">
+    </div>
+
+     <div class ="icon">
+         <img src = "gae_icon.png" width="70">
+        </div>
+        
+
+       
+       <div class="theme"> 응봉산 개나리 축제 </div>
+       <div class ="description"> 봄의 전령 개나리가 노랗게 물들인 <br/>꽃 길을 따라 숲으로 떠나보아요 </div>
+       
+       <div class="subtitle">일정</div>
+       <div class="date">
+              <strong>2019.3.29.~4.5</strong><br/><ee style="font-size: 15px;">여의도 한강공원</ee>
+        </div>
+       
+       <div class="subtitle">장소</div>
+       
+       <div class="map">
+       <div class="map_box">
+          <img src ="map_gae.png"> 
+       </div>
+        </div>
+        
+        <div class ="subtitle">액티비티</div>
+        <div class="activity_box">
+        <div class="activity">
+            <img src="gaeA1.png" width= "220">
+            <img src="gaeA2.png" width= "220">
+            <img src="gaeA3.png" width= "220">
+            <img src="gaeA4.png" width= "220">
+        </div>
+        </div>
+        <div class ="subtitle">행사</div>
+        <div class="show_box">
+           <div class="show">
+            <img src="gaeF1.png" width="470">
+            <img src="gaeF2.png" width="470">
+            
+             </div>
+        </div>  
+    </div>
+            
+    <div id="section3">
+        <div class="cherrypng">
+           <img src="yu_branch.png">
+    </div>
+
+     <div class ="icon">
+         <img src = "yu_icon.png" width="70">
+        </div>
+        
+
+       
+       <div class="theme"> 서래섬 유채꽃 축제 </div>
+       <div class ="description"> 노란 유채밭과 푸른 한강 사이를 걸으며 <br/> 잊지 못할 추억을 남겨요 </div>
+       
+       <div class="subtitle">일정</div>
+                <div class="date">
+              <strong>2019.5.4.~5.12</strong><br/><ee style="font-size: 15px;">반포 한강공원 서래섬</ee>
+        </div>
+
+       
+       
+       <div class="subtitle">장소</div>
+       
+       <div class="map">
+       <div class="map_box">
+          <img src ="map_yu.png"> 
+       </div>
+        </div>
+        
+        <div class ="subtitle">액티비티</div>
+        <div class="activity_box">
+        <div class="activity">
+            <img src="yuA1.png" width= "220">
+            <img src="yuA2.png" width= "220">
+            <img src="yuA3.png" width= "220">
+            <img src="yuA4.png" width= "220">
+        </div>
+        </div>
+        <div class ="subtitle">행사</div>
+        <div class="show_box">
+           <div class="show">
+            <img src="yuF1.png" width="470">
+            <img src="yuF2.png" width="470">
+            <img src="yuF3.png" width="470">
+             </div>
+        </div>
+    </div>
+            
+    <div id="section4">
+       <div class="cherrypng">
+           <img src="rose_branch.png">
+    </div>
+
+     <div class ="icon">
+         <img src = "rose_icon.png" width="70">
+        </div>
+        
+
+       
+       <div class="theme"> 뚝섬 장미 축제 </div>
+       <div class ="description"> 꽃의 여왕 장미로 뒤덮인 <br/>아름다운 공간으로 당신을 초대합니다! </div>
+       
+       <div class="subtitle">일정</div>
+       
+        <div class="date">
+              <strong>2019.5.13.~5.19</strong><br/><ee style="font-size: 15px;">뚝섬 한강공원</ee>
+        </div>
+       
+       
+       <div class="subtitle">장소</div>
+       
+       <div class="map">
+       <div class="map_box">
+          <img src ="map_rose.png"> 
+       </div>
+        </div>
+        
+        <div class ="subtitle">액티비티</div>
+        <div class="activity_box">
+        <div class="activity">
+            <img src="roseA1.png" width= "220">
+            <img src="roseA2.png" width= "220">
+            <img src="roseA3.png" width= "220">
+        </div>
+        </div>
+        <div class ="subtitle">행사</div>
+        <div class="show_box">
+           <div class="show">
+            <img src="roseF1.png" width="470">
+            <img src="roseF2.png" width="470">
+             </div>
+        </div> 
+    </div>
+                   
+    <div class="footer">
+                
+                <div id="contact">
+                    <p class="footer-p"> CONTACT</p>
+                    <p class="footer-p2">
+                    Sarah Yoon <br/>sarahandjoy@gmail.com</p>
+                </div>
+                
+                <div id="social">
+                    <p class="footer-p"> SOCIAL</p>    
+                </div>
+                
+                <div id="copyright">
+                    <p class="footer-p3">COPYRIGHT ALL RIGHT RESERVED.</p>
+                </div>
+     </div>           
+ </div>
+       </div>      
+</body>    
+</html>
